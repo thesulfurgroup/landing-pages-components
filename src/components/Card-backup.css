@@ -1,0 +1,67 @@
+.card {
+  overflow: hidden;
+  height: 400px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.cardImage {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: lightgray;
+  background: url('../img/img.jpg') no-repeat center/cover;
+  transition: all 0.3s ease-in-out;
+}
+.cardDetails {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 2rem;
+  color: white;
+  overflow-wrap: break-word;
+}
+.cardDetails h1 {
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+.card:hover .cardImage,
+.card:focus .cardImage {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card:hover .cardDetails h1 {
+  border-bottom: 10px solid red;
+  transition: all 0.2s;
+}
+
+@media (max-width: 320px) {
+  .cardDetails h1 {
+    font-size: 2.5rem;
+  }
+  .card:hover .cardDetails h1 {
+    border-bottom: 5px solid red;
+  }
+}

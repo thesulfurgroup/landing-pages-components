@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: #565757;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+section {
+  padding: 5rem;
+}
+a {
+  text-decoration: none;
+}
+.App {
+  position: relative;
+}
+.headingOne {
+  font-size: 2.5rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.headingOneAlt {
+  font-size: 2.5rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 425px) {
+  section {
+    padding: 2rem;
+  }
+}
+@media (min-width: 2560px) {
+  section {
+    padding: 10rem 30rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  section {
+    padding: 8rem;
+  }
+}

@@ -1,0 +1,22 @@
+.cardsSection {
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 425px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

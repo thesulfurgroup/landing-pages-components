@@ -1,0 +1,17 @@
+.igniteSection {
+  background: url('../img/ignite-background.jpg') center/cover no-repeat;
+}
+.igniteSection .igniteCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.igniteCards .card .cardIcon {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .igniteSection .igniteCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
